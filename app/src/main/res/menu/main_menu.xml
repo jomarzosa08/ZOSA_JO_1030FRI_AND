@@ -1,0 +1,24 @@
+<!-- res/menu/main_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_item_1"
+        android:title="Go to Second Fragment"
+        android:icon="@drawable/ic_menu_next" />
+
+    <item
+        android:id="@+id/menu_item_2"
+        android:title="Show Dialog"
+        android:icon="@android:drawable/ic_dialog_info" />
+
+    <item
+        android:id="@+id/menu_item_3"
+        android:title="More Options"
+        android:icon="@android:drawable/ic_menu_more">
+        <menu>
+            <item
+                android:id="@+id/submenu_exit"
+                android:title="Exit App"
+                android:icon="@android:drawable/ic_menu_close_clear_cancel" />
+        </menu>
+    </item>
+</menu>
