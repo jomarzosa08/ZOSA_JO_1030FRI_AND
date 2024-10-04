@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ZOSA_NAVBAR</string>
+    <string name="profile_information">Profile Information</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="middle_name_hint">Middle Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_hint">Email Address</string>
+    <string name="contact_number_hint">Contact Number</string>
+    <string name="gender_label">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="status_label">Status</string>
+    <string name="single">Single</string>
+    <string name="married">Married</string>
+    <string name="divorced">Divorced</string>
+    <string name="working">Working</string>
+    <string name="studying">Still Studying</string>
+    <string name="save_profile">Save Profile</string>
+</resources>

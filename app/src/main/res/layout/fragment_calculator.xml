@@ -1,0 +1,120 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background_color"
+    tools:context=".CalculatorFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/firstNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter first number"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/secNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstNum"
+            android:layout_marginTop="16dp"
+            android:hint="Enter second number"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secNum"
+            android:layout_marginTop="16dp"
+            android:textSize="24sp"
+            android:textColor="@color/secondary_text_color"
+            android:text="Result" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add"
+                android:backgroundTint="@color/primary_color"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Subtract"
+                android:backgroundTint="@color/primary_color"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Multiply"
+                android:backgroundTint="@color/primary_color"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Divide"
+                android:backgroundTint="@color/primary_color"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
